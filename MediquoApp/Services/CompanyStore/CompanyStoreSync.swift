@@ -169,7 +169,13 @@ class CompanyStoreSync : CompanyStoreAPI {
                         let casted = objects.map { (managed) -> Network in
                             managed.toNetwork()
                         }
-                        seal.fulfill( casted )
+                        
+                        if casted.count > 0 {
+                            seal.fulfill( casted )
+                        // If we reach this point, it means there is no internet and the saved data is empty
+                        }else{
+                            seal.reject( MediquoError.networkError )
+                        }
                     
                     case .failure(let error):
                         seal.reject( error )
