@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  MediquoApp
+
+  Created by Guillem Espejo on 05/11/2020.
+  
+*/
+
+"TapElementToLoad" = "Tap any company to view its details.";
+"CompanyNullName" = "Unknown Company";
+"CompanyNetworkName" = "%@ - %@";
+"NA" = "N/A";
+"NetworkNameFormat" = "%@ (%@)";
+"SearchPlaceholder" = "Enter search text";
+"PullRefresh" = "Pull to refresh";
+"Loading" = "Loading...";
+
+"LocationLabel" = "City:";
+"CoordinatesLabel" = "Location:";
+"CoordinatesFormat" = "%.2f º   %.2f º (Lat-Long)";
+"NotYetLoaded" = "No element has been selected yet!";
+
+"ErrorTitle" = "Error";
+"ErrorNetwork" = "There was an error retrieving info from the server. Local data will be used.";
+"ErrorEndPoint" = "The supplied URL for accessing server is invalid. Maybe was it changed?";
+"ErrorParse" = "There was an error processing server response. Local data will be used.";
+"ErrorCoreData" = "There was an error with local data storage.";
+"ErrorNoInternet" = "There is no Internet connection available.";
+"ErrorFatal" = "There was a fatal error. No information could be retrieved from internet or locally.";
+
+"Proceed" = "Proceed";
+"ContactDeveloper" = "This error is not recoverable, you should contact us to fix it.";
+"LocalData" = "Due to this, the data may not be up to date. Try refreshing the list later.";
+
+

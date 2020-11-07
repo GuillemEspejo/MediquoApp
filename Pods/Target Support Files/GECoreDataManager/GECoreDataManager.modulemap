@@ -1,0 +1,6 @@
+framework module GECoreDataManager {
+  umbrella header "GECoreDataManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D094CE625547969003EC461 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D094CE525547969003EC461 /* Station.swift */; };
+		3D094CEB255479A8003EC461 /* StationStoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D094CEA255479A8003EC461 /* StationStoreAPI.swift */; };
+		3D094CF3255479F5003EC461 /* StationStoreSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D094CF2255479F5003EC461 /* StationStoreSync.swift */; };
+		3D094D1125549B56003EC461 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D094D1025549B56003EC461 /* StationCell.swift */; };
+		3D455E1B2552C92F0030521E /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D455E1A2552C92F0030521E /* Network.swift */; };
+		3D455E20255307F20030521E /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D455E1F255307F20030521E /* Company.swift */; };
+		3D455E252553080B0030521E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D455E242553080B0030521E /* Location.swift */; };
+		3D455E32255308CA0030521E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D455E31255308CA0030521E /* Constants.swift */; };
+		3D455E5C25533D230030521E /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D455E5B25533D230030521E /* Resources.swift */; };
+		3D455E6125533E250030521E /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D455E6025533E250030521E /* String+Localizable.swift */; };
+		3D505D6F2555ABE000873F38 /* ManagedNetwork+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D505D692555ABE000873F38 /* ManagedNetwork+CoreDataClass.swift */; };
+		3D505D712555ABE000873F38 /* ManagedStation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D505D6B2555ABE000873F38 /* ManagedStation+CoreDataClass.swift */; };
+		3D505D732555ABE000873F38 /* ManagedLocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D505D6D2555ABE000873F38 /* ManagedLocation+CoreDataClass.swift */; };
+		3D505DB02555BC7100873F38 /* JSONResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D505DAF2555BC7100873F38 /* JSONResponseParser.swift */; };
+		3D6836022556F3FB00C93D6A /* CompanyListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6835FD2556F3FB00C93D6A /* CompanyListViewControllerTests.swift */; };
+		3D6836032556F3FB00C93D6A /* CompanyListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6835FE2556F3FB00C93D6A /* CompanyListInteractorTests.swift */; };
+		3D6836052556F3FB00C93D6A /* CompanyListDoublesAndSpies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6836002556F3FB00C93D6A /* CompanyListDoublesAndSpies.swift */; };
+		3D6836062556F3FB00C93D6A /* CompanyListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6836012556F3FB00C93D6A /* CompanyListPresenterTests.swift */; };
+		3DAB2565255189FA0056D7A7 /* CompanyListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB255F255189FA0056D7A7 /* CompanyListPresenter.swift */; };
+		3DAB2566255189FA0056D7A7 /* CompanyListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB2560255189FA0056D7A7 /* CompanyListWorker.swift */; };
+		3DAB2567255189FA0056D7A7 /* CompanyListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB2561255189FA0056D7A7 /* CompanyListRouter.swift */; };
+		3DAB2568255189FA0056D7A7 /* CompanyListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB2562255189FA0056D7A7 /* CompanyListModels.swift */; };
+		3DAB2569255189FA0056D7A7 /* CompanyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB2563255189FA0056D7A7 /* CompanyListViewController.swift */; };
+		3DAB256A255189FA0056D7A7 /* CompanyListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB2564255189FA0056D7A7 /* CompanyListInteractor.swift */; };
+		3DAB25772551CF630056D7A7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DAB25792551CF630056D7A7 /* Localizable.strings */; };
+		3DAB257E2551CFA10056D7A7 /* UIKit+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB257D2551CFA10056D7A7 /* UIKit+Localizable.swift */; };
+		3DAB25872551D1190056D7A7 /* RootSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB25862551D1190056D7A7 /* RootSplitViewController.swift */; };
+		3DAB25952551D8FF0056D7A7 /* Mediquo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB25932551D8FF0056D7A7 /* Mediquo.xcdatamodeld */; };
+		3DAB259C2551D9670056D7A7 /* CompanyStoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB259B2551D9670056D7A7 /* CompanyStoreAPI.swift */; };
+		3DAB25A12551D9BA0056D7A7 /* CompanyStoreSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB25A02551D9BA0056D7A7 /* CompanyStoreSync.swift */; };
+		3DAB25B02551E9FB0056D7A7 /* CompanyDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB25AA2551E9FB0056D7A7 /* CompanyDetailPresenter.swift */; };
+		3DAB25B12551E9FB0056D7A7 /* CompanyDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB25AB2551E9FB0056D7A7 /* CompanyDetailWorker.swift */; };
+		3DAB25B22551E9FB0056D7A7 /* CompanyDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB25AC2551E9FB0056D7A7 /* CompanyDetailRouter.swift */; };
+		3DAB25B32551E9FB0056D7A7 /* CompanyDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB25AD2551E9FB0056D7A7 /* CompanyDetailModels.swift */; };
+		3DAB25B42551E9FB0056D7A7 /* CompanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB25AE2551E9FB0056D7A7 /* CompanyDetailViewController.swift */; };
+		3DAB25B52551E9FB0056D7A7 /* CompanyDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAB25AF2551E9FB0056D7A7 /* CompanyDetailInteractor.swift */; };
+		3DB87E8725503D2E00B59B04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB87E8625503D2E00B59B04 /* AppDelegate.swift */; };
+		3DB87E8925503D2E00B59B04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB87E8825503D2E00B59B04 /* SceneDelegate.swift */; };
+		3DB87E8E25503D2E00B59B04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB87E8C25503D2E00B59B04 /* Main.storyboard */; };
+		3DB87E9025503D2E00B59B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB87E8F25503D2E00B59B04 /* Assets.xcassets */; };
+		3DB87E9325503D2E00B59B04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB87E9125503D2E00B59B04 /* LaunchScreen.storyboard */; };
+		3DF00C6025556BC900AA0F6F /* MediquoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF00C5F25556BC900AA0F6F /* MediquoError.swift */; };
+		3DF00C8625559E8E00AA0F6F /* UIAlertController+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF00C8525559E8E00AA0F6F /* UIAlertController+Sugar.swift */; };
+		A6F70B080E2C06197324B61D /* Pods_MediquoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA419B61720857548DFE0B3 /* Pods_MediquoAppTests.framework */; };
+		F3E45F1D5472D60198F602BE /* Pods_MediquoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF0F1888902022CF43A1D0C /* Pods_MediquoApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DB87E9A25503D2F00B59B04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DB87E7B25503D2E00B59B04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB87E8225503D2E00B59B04;
+			remoteInfo = MediquoApp;
+		};
+		3DB87EA525503D2F00B59B04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DB87E7B25503D2E00B59B04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB87E8225503D2E00B59B04;
+			remoteInfo = MediquoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E27457AF05A30E8D86AFAD4 /* Pods-MediquoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediquoApp.release.xcconfig"; path = "Target Support Files/Pods-MediquoApp/Pods-MediquoApp.release.xcconfig"; sourceTree = "<group>"; };
+		2854146A45517B2A7C919078 /* Pods-MediquoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediquoApp.debug.xcconfig"; path = "Target Support Files/Pods-MediquoApp/Pods-MediquoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3D094CE525547969003EC461 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		3D094CEA255479A8003EC461 /* StationStoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationStoreAPI.swift; sourceTree = "<group>"; };
+		3D094CF2255479F5003EC461 /* StationStoreSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationStoreSync.swift; sourceTree = "<group>"; };
+		3D094D1025549B56003EC461 /* StationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
+		3D455E1A2552C92F0030521E /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		3D455E1F255307F20030521E /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		3D455E242553080B0030521E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3D455E31255308CA0030521E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3D455E5B25533D230030521E /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		3D455E6025533E250030521E /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
+		3D505D692555ABE000873F38 /* ManagedNetwork+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedNetwork+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3D505D6B2555ABE000873F38 /* ManagedStation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedStation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3D505D6D2555ABE000873F38 /* ManagedLocation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedLocation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3D505DAF2555BC7100873F38 /* JSONResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONResponseParser.swift; sourceTree = "<group>"; };
+		3D6835FD2556F3FB00C93D6A /* CompanyListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListViewControllerTests.swift; sourceTree = "<group>"; };
+		3D6835FE2556F3FB00C93D6A /* CompanyListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListInteractorTests.swift; sourceTree = "<group>"; };
+		3D6836002556F3FB00C93D6A /* CompanyListDoublesAndSpies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListDoublesAndSpies.swift; sourceTree = "<group>"; };
+		3D6836012556F3FB00C93D6A /* CompanyListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListPresenterTests.swift; sourceTree = "<group>"; };
+		3DAB255F255189FA0056D7A7 /* CompanyListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListPresenter.swift; sourceTree = "<group>"; };
+		3DAB2560255189FA0056D7A7 /* CompanyListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListWorker.swift; sourceTree = "<group>"; };
+		3DAB2561255189FA0056D7A7 /* CompanyListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListRouter.swift; sourceTree = "<group>"; };
+		3DAB2562255189FA0056D7A7 /* CompanyListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListModels.swift; sourceTree = "<group>"; };
+		3DAB2563255189FA0056D7A7 /* CompanyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListViewController.swift; sourceTree = "<group>"; };
+		3DAB2564255189FA0056D7A7 /* CompanyListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListInteractor.swift; sourceTree = "<group>"; };
+		3DAB25782551CF630056D7A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3DAB257D2551CFA10056D7A7 /* UIKit+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Localizable.swift"; sourceTree = "<group>"; };
+		3DAB25862551D1190056D7A7 /* RootSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootSplitViewController.swift; sourceTree = "<group>"; };
+		3DAB25942551D8FF0056D7A7 /* Mediquo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mediquo.xcdatamodel; sourceTree = "<group>"; };
+		3DAB259B2551D9670056D7A7 /* CompanyStoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyStoreAPI.swift; sourceTree = "<group>"; };
+		3DAB25A02551D9BA0056D7A7 /* CompanyStoreSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyStoreSync.swift; sourceTree = "<group>"; };
+		3DAB25AA2551E9FB0056D7A7 /* CompanyDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailPresenter.swift; sourceTree = "<group>"; };
+		3DAB25AB2551E9FB0056D7A7 /* CompanyDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailWorker.swift; sourceTree = "<group>"; };
+		3DAB25AC2551E9FB0056D7A7 /* CompanyDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailRouter.swift; sourceTree = "<group>"; };
+		3DAB25AD2551E9FB0056D7A7 /* CompanyDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailModels.swift; sourceTree = "<group>"; };
+		3DAB25AE2551E9FB0056D7A7 /* CompanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailViewController.swift; sourceTree = "<group>"; };
+		3DAB25AF2551E9FB0056D7A7 /* CompanyDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailInteractor.swift; sourceTree = "<group>"; };
+		3DB87E8325503D2E00B59B04 /* MediquoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediquoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB87E8625503D2E00B59B04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DB87E8825503D2E00B59B04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3DB87E8D25503D2E00B59B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DB87E8F25503D2E00B59B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DB87E9225503D2E00B59B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DB87E9425503D2E00B59B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB87E9925503D2F00B59B04 /* MediquoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediquoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB87E9F25503D2F00B59B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB87EA425503D2F00B59B04 /* MediquoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediquoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF00C5F25556BC900AA0F6F /* MediquoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediquoError.swift; sourceTree = "<group>"; };
+		3DF00C8525559E8E00AA0F6F /* UIAlertController+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Sugar.swift"; sourceTree = "<group>"; };
+		4EA419B61720857548DFE0B3 /* Pods_MediquoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediquoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF0F1888902022CF43A1D0C /* Pods_MediquoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediquoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		990D7C363CFC376267261D5B /* Pods-MediquoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediquoAppTests.release.xcconfig"; path = "Target Support Files/Pods-MediquoAppTests/Pods-MediquoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2EA9AA06AAA5C412E67FEF5 /* Pods-MediquoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediquoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MediquoAppTests/Pods-MediquoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB87E8025503D2E00B59B04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E45F1D5472D60198F602BE /* Pods_MediquoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB87E9625503D2F00B59B04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F70B080E2C06197324B61D /* Pods_MediquoAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB87EA125503D2F00B59B04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D094D0F25549B4B003EC461 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D094D1025549B56003EC461 /* StationCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D505D672555ABB700873F38 /* Managed */ = {
+			isa = PBXGroup;
+			children = (
+				3D505D692555ABE000873F38 /* ManagedNetwork+CoreDataClass.swift */,
+				3D505D6B2555ABE000873F38 /* ManagedStation+CoreDataClass.swift */,
+				3D505D6D2555ABE000873F38 /* ManagedLocation+CoreDataClass.swift */,
+			);
+			path = Managed;
+			sourceTree = "<group>";
+		};
+		3D505D682555ABBC00873F38 /* Unmanaged */ = {
+			isa = PBXGroup;
+			children = (
+				3D455E1A2552C92F0030521E /* Network.swift */,
+				3D455E1F255307F20030521E /* Company.swift */,
+				3D455E242553080B0030521E /* Location.swift */,
+				3D094CE525547969003EC461 /* Station.swift */,
+			);
+			path = Unmanaged;
+			sourceTree = "<group>";
+		};
+		3D505DB42555BCEF00873F38 /* ResponseParser */ = {
+			isa = PBXGroup;
+			children = (
+				3D505DAF2555BC7100873F38 /* JSONResponseParser.swift */,
+			);
+			path = ResponseParser;
+			sourceTree = "<group>";
+		};
+		3DAB253F25503FB00056D7A7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3DAB255D255189C10056D7A7 /* CompanyDetail */,
+				3DAB255C255189BA0056D7A7 /* CompanyList */,
+				3DAB25862551D1190056D7A7 /* RootSplitViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3DAB254025503FB70056D7A7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3D094D0F25549B4B003EC461 /* Views */,
+				3DAB256E2551CEF80056D7A7 /* Extensions */,
+				3D455E31255308CA0030521E /* Constants.swift */,
+				3D455E5B25533D230030521E /* Resources.swift */,
+				3DF00C5F25556BC900AA0F6F /* MediquoError.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3DAB254425503FC20056D7A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DB87E8F25503D2E00B59B04 /* Assets.xcassets */,
+				3DB87E9125503D2E00B59B04 /* LaunchScreen.storyboard */,
+				3DB87E8C25503D2E00B59B04 /* Main.storyboard */,
+				3DAB25792551CF630056D7A7 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DAB255C255189BA0056D7A7 /* CompanyList */ = {
+			isa = PBXGroup;
+			children = (
+				3DAB255F255189FA0056D7A7 /* CompanyListPresenter.swift */,
+				3DAB2560255189FA0056D7A7 /* CompanyListWorker.swift */,
+				3DAB2561255189FA0056D7A7 /* CompanyListRouter.swift */,
+				3DAB2562255189FA0056D7A7 /* CompanyListModels.swift */,
+				3DAB2563255189FA0056D7A7 /* CompanyListViewController.swift */,
+				3DAB2564255189FA0056D7A7 /* CompanyListInteractor.swift */,
+			);
+			path = CompanyList;
+			sourceTree = "<group>";
+		};
+		3DAB255D255189C10056D7A7 /* CompanyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3DAB25AA2551E9FB0056D7A7 /* CompanyDetailPresenter.swift */,
+				3DAB25AB2551E9FB0056D7A7 /* CompanyDetailWorker.swift */,
+				3DAB25AC2551E9FB0056D7A7 /* CompanyDetailRouter.swift */,
+				3DAB25AD2551E9FB0056D7A7 /* CompanyDetailModels.swift */,
+				3DAB25AE2551E9FB0056D7A7 /* CompanyDetailViewController.swift */,
+				3DAB25AF2551E9FB0056D7A7 /* CompanyDetailInteractor.swift */,
+			);
+			path = CompanyDetail;
+			sourceTree = "<group>";
+		};
+		3DAB256E2551CEF80056D7A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3DF00C8525559E8E00AA0F6F /* UIAlertController+Sugar.swift */,
+				3DAB257D2551CFA10056D7A7 /* UIKit+Localizable.swift */,
+				3D455E6025533E250030521E /* String+Localizable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3DAB25912551D8DA0056D7A7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3D505DB42555BCEF00873F38 /* ResponseParser */,
+				3DAB259A2551D91B0056D7A7 /* StationStore */,
+				3DAB25992551D9140056D7A7 /* CompanyStore */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3DAB25922551D8EB0056D7A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D505D682555ABBC00873F38 /* Unmanaged */,
+				3D505D672555ABB700873F38 /* Managed */,
+				3DAB25932551D8FF0056D7A7 /* Mediquo.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DAB25992551D9140056D7A7 /* CompanyStore */ = {
+			isa = PBXGroup;
+			children = (
+				3DAB259B2551D9670056D7A7 /* CompanyStoreAPI.swift */,
+				3DAB25A02551D9BA0056D7A7 /* CompanyStoreSync.swift */,
+			);
+			path = CompanyStore;
+			sourceTree = "<group>";
+		};
+		3DAB259A2551D91B0056D7A7 /* StationStore */ = {
+			isa = PBXGroup;
+			children = (
+				3D094CEA255479A8003EC461 /* StationStoreAPI.swift */,
+				3D094CF2255479F5003EC461 /* StationStoreSync.swift */,
+			);
+			path = StationStore;
+			sourceTree = "<group>";
+		};
+		3DB87E7A25503D2E00B59B04 = {
+			isa = PBXGroup;
+			children = (
+				3DB87E8525503D2E00B59B04 /* MediquoApp */,
+				3DB87E9C25503D2F00B59B04 /* MediquoAppTests */,
+				3DB87E8425503D2E00B59B04 /* Products */,
+				C2171AB83981E032460C2E1A /* Pods */,
+				597D066FC293734FB18AE46E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB87E8425503D2E00B59B04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB87E8325503D2E00B59B04 /* MediquoApp.app */,
+				3DB87E9925503D2F00B59B04 /* MediquoAppTests.xctest */,
+				3DB87EA425503D2F00B59B04 /* MediquoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB87E8525503D2E00B59B04 /* MediquoApp */ = {
+			isa = PBXGroup;
+			children = (
+				3DB87E9425503D2E00B59B04 /* Info.plist */,
+				3DB87E8825503D2E00B59B04 /* SceneDelegate.swift */,
+				3DB87E8625503D2E00B59B04 /* AppDelegate.swift */,
+				3DAB25922551D8EB0056D7A7 /* Model */,
+				3DAB25912551D8DA0056D7A7 /* Services */,
+				3DAB254425503FC20056D7A7 /* Resources */,
+				3DAB254025503FB70056D7A7 /* Shared */,
+				3DAB253F25503FB00056D7A7 /* Scenes */,
+			);
+			path = MediquoApp;
+			sourceTree = "<group>";
+		};
+		3DB87E9C25503D2F00B59B04 /* MediquoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DF00C80255578DF00AA0F6F /* Scenes */,
+				3DB87E9F25503D2F00B59B04 /* Info.plist */,
+			);
+			path = MediquoAppTests;
+			sourceTree = "<group>";
+		};
+		3DF00C80255578DF00AA0F6F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3DF00C81255578E400AA0F6F /* CompanyList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3DF00C81255578E400AA0F6F /* CompanyList */ = {
+			isa = PBXGroup;
+			children = (
+				3D6835FD2556F3FB00C93D6A /* CompanyListViewControllerTests.swift */,
+				3D6835FE2556F3FB00C93D6A /* CompanyListInteractorTests.swift */,
+				3D6836002556F3FB00C93D6A /* CompanyListDoublesAndSpies.swift */,
+				3D6836012556F3FB00C93D6A /* CompanyListPresenterTests.swift */,
+			);
+			path = CompanyList;
+			sourceTree = "<group>";
+		};
+		597D066FC293734FB18AE46E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CF0F1888902022CF43A1D0C /* Pods_MediquoApp.framework */,
+				4EA419B61720857548DFE0B3 /* Pods_MediquoAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2171AB83981E032460C2E1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2854146A45517B2A7C919078 /* Pods-MediquoApp.debug.xcconfig */,
+				0E27457AF05A30E8D86AFAD4 /* Pods-MediquoApp.release.xcconfig */,
+				A2EA9AA06AAA5C412E67FEF5 /* Pods-MediquoAppTests.debug.xcconfig */,
+				990D7C363CFC376267261D5B /* Pods-MediquoAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB87E8225503D2E00B59B04 /* MediquoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB87EAD25503D2F00B59B04 /* Build configuration list for PBXNativeTarget "MediquoApp" */;
+			buildPhases = (
+				E231D5C37F700CEE778942C8 /* [CP] Check Pods Manifest.lock */,
+				3DB87E7F25503D2E00B59B04 /* Sources */,
+				3DB87E8025503D2E00B59B04 /* Frameworks */,
+				3DB87E8125503D2E00B59B04 /* Resources */,
+				2F416217635AC9EBDB625A0C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediquoApp;
+			productName = MediquoApp;
+			productReference = 3DB87E8325503D2E00B59B04 /* MediquoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DB87E9825503D2F00B59B04 /* MediquoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB87EB025503D2F00B59B04 /* Build configuration list for PBXNativeTarget "MediquoAppTests" */;
+			buildPhases = (
+				789060717D1AFA46E6B855C2 /* [CP] Check Pods Manifest.lock */,
+				3DB87E9525503D2F00B59B04 /* Sources */,
+				3DB87E9625503D2F00B59B04 /* Frameworks */,
+				3DB87E9725503D2F00B59B04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB87E9B25503D2F00B59B04 /* PBXTargetDependency */,
+			);
+			name = MediquoAppTests;
+			productName = MediquoAppTests;
+			productReference = 3DB87E9925503D2F00B59B04 /* MediquoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DB87EA325503D2F00B59B04 /* MediquoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB87EB325503D2F00B59B04 /* Build configuration list for PBXNativeTarget "MediquoAppUITests" */;
+			buildPhases = (
+				3DB87EA025503D2F00B59B04 /* Sources */,
+				3DB87EA125503D2F00B59B04 /* Frameworks */,
+				3DB87EA225503D2F00B59B04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB87EA625503D2F00B59B04 /* PBXTargetDependency */,
+			);
+			name = MediquoAppUITests;
+			productName = MediquoAppUITests;
+			productReference = 3DB87EA425503D2F00B59B04 /* MediquoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB87E7B25503D2E00B59B04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					3DB87E8225503D2E00B59B04 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					3DB87E9825503D2F00B59B04 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 3DB87E8225503D2E00B59B04;
+					};
+					3DB87EA325503D2F00B59B04 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 3DB87E8225503D2E00B59B04;
+					};
+				};
+			};
+			buildConfigurationList = 3DB87E7E25503D2E00B59B04 /* Build configuration list for PBXProject "MediquoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DB87E7A25503D2E00B59B04;
+			productRefGroup = 3DB87E8425503D2E00B59B04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB87E8225503D2E00B59B04 /* MediquoApp */,
+				3DB87E9825503D2F00B59B04 /* MediquoAppTests */,
+				3DB87EA325503D2F00B59B04 /* MediquoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB87E8125503D2E00B59B04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB87E9325503D2E00B59B04 /* LaunchScreen.storyboard in Resources */,
+				3DAB25772551CF630056D7A7 /* Localizable.strings in Resources */,
+				3DB87E9025503D2E00B59B04 /* Assets.xcassets in Resources */,
+				3DB87E8E25503D2E00B59B04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB87E9725503D2F00B59B04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB87EA225503D2F00B59B04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F416217635AC9EBDB625A0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediquoApp/Pods-MediquoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MediquoApp/Pods-MediquoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MediquoApp/Pods-MediquoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		789060717D1AFA46E6B855C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediquoAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E231D5C37F700CEE778942C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediquoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB87E7F25503D2E00B59B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAB25B22551E9FB0056D7A7 /* CompanyDetailRouter.swift in Sources */,
+				3DAB25B42551E9FB0056D7A7 /* CompanyDetailViewController.swift in Sources */,
+				3D505D712555ABE000873F38 /* ManagedStation+CoreDataClass.swift in Sources */,
+				3D094CF3255479F5003EC461 /* StationStoreSync.swift in Sources */,
+				3DF00C6025556BC900AA0F6F /* MediquoError.swift in Sources */,
+				3DAB2565255189FA0056D7A7 /* CompanyListPresenter.swift in Sources */,
+				3DAB259C2551D9670056D7A7 /* CompanyStoreAPI.swift in Sources */,
+				3DAB25952551D8FF0056D7A7 /* Mediquo.xcdatamodeld in Sources */,
+				3D455E252553080B0030521E /* Location.swift in Sources */,
+				3DAB2566255189FA0056D7A7 /* CompanyListWorker.swift in Sources */,
+				3DAB25872551D1190056D7A7 /* RootSplitViewController.swift in Sources */,
+				3D455E32255308CA0030521E /* Constants.swift in Sources */,
+				3DAB25A12551D9BA0056D7A7 /* CompanyStoreSync.swift in Sources */,
+				3DAB257E2551CFA10056D7A7 /* UIKit+Localizable.swift in Sources */,
+				3DF00C8625559E8E00AA0F6F /* UIAlertController+Sugar.swift in Sources */,
+				3DB87E8725503D2E00B59B04 /* AppDelegate.swift in Sources */,
+				3D505DB02555BC7100873F38 /* JSONResponseParser.swift in Sources */,
+				3D455E20255307F20030521E /* Company.swift in Sources */,
+				3D094D1125549B56003EC461 /* StationCell.swift in Sources */,
+				3DAB25B12551E9FB0056D7A7 /* CompanyDetailWorker.swift in Sources */,
+				3DAB256A255189FA0056D7A7 /* CompanyListInteractor.swift in Sources */,
+				3DAB2569255189FA0056D7A7 /* CompanyListViewController.swift in Sources */,
+				3D094CEB255479A8003EC461 /* StationStoreAPI.swift in Sources */,
+				3DAB25B32551E9FB0056D7A7 /* CompanyDetailModels.swift in Sources */,
+				3DAB2567255189FA0056D7A7 /* CompanyListRouter.swift in Sources */,
+				3D094CE625547969003EC461 /* Station.swift in Sources */,
+				3D505D6F2555ABE000873F38 /* ManagedNetwork+CoreDataClass.swift in Sources */,
+				3D455E5C25533D230030521E /* Resources.swift in Sources */,
+				3DAB25B02551E9FB0056D7A7 /* CompanyDetailPresenter.swift in Sources */,
+				3D455E6125533E250030521E /* String+Localizable.swift in Sources */,
+				3DAB25B52551E9FB0056D7A7 /* CompanyDetailInteractor.swift in Sources */,
+				3D505D732555ABE000873F38 /* ManagedLocation+CoreDataClass.swift in Sources */,
+				3DB87E8925503D2E00B59B04 /* SceneDelegate.swift in Sources */,
+				3DAB2568255189FA0056D7A7 /* CompanyListModels.swift in Sources */,
+				3D455E1B2552C92F0030521E /* Network.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB87E9525503D2F00B59B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6836062556F3FB00C93D6A /* CompanyListPresenterTests.swift in Sources */,
+				3D6836022556F3FB00C93D6A /* CompanyListViewControllerTests.swift in Sources */,
+				3D6836052556F3FB00C93D6A /* CompanyListDoublesAndSpies.swift in Sources */,
+				3D6836032556F3FB00C93D6A /* CompanyListInteractorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB87EA025503D2F00B59B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DB87E9B25503D2F00B59B04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DB87E8225503D2E00B59B04 /* MediquoApp */;
+			targetProxy = 3DB87E9A25503D2F00B59B04 /* PBXContainerItemProxy */;
+		};
+		3DB87EA625503D2F00B59B04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DB87E8225503D2E00B59B04 /* MediquoApp */;
+			targetProxy = 3DB87EA525503D2F00B59B04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DAB25792551CF630056D7A7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DAB25782551CF630056D7A7 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		3DB87E8C25503D2E00B59B04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB87E8D25503D2E00B59B04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DB87E9125503D2E00B59B04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB87E9225503D2E00B59B04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DB87EAB25503D2F00B59B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DB87EAC25503D2F00B59B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DB87EAE25503D2F00B59B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2854146A45517B2A7C919078 /* Pods-MediquoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z934923FYW;
+				INFOPLIST_FILE = MediquoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gespejo.MediquoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DB87EAF25503D2F00B59B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E27457AF05A30E8D86AFAD4 /* Pods-MediquoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z934923FYW;
+				INFOPLIST_FILE = MediquoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gespejo.MediquoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DB87EB125503D2F00B59B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2EA9AA06AAA5C412E67FEF5 /* Pods-MediquoAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z934923FYW;
+				INFOPLIST_FILE = MediquoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gespejo.MediquoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediquoApp.app/MediquoApp";
+			};
+			name = Debug;
+		};
+		3DB87EB225503D2F00B59B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 990D7C363CFC376267261D5B /* Pods-MediquoAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z934923FYW;
+				INFOPLIST_FILE = MediquoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gespejo.MediquoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediquoApp.app/MediquoApp";
+			};
+			name = Release;
+		};
+		3DB87EB425503D2F00B59B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z934923FYW;
+				INFOPLIST_FILE = MediquoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gespejo.MediquoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediquoApp;
+			};
+			name = Debug;
+		};
+		3DB87EB525503D2F00B59B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z934923FYW;
+				INFOPLIST_FILE = MediquoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gespejo.MediquoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediquoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB87E7E25503D2E00B59B04 /* Build configuration list for PBXProject "MediquoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB87EAB25503D2F00B59B04 /* Debug */,
+				3DB87EAC25503D2F00B59B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB87EAD25503D2F00B59B04 /* Build configuration list for PBXNativeTarget "MediquoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB87EAE25503D2F00B59B04 /* Debug */,
+				3DB87EAF25503D2F00B59B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB87EB025503D2F00B59B04 /* Build configuration list for PBXNativeTarget "MediquoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB87EB125503D2F00B59B04 /* Debug */,
+				3DB87EB225503D2F00B59B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB87EB325503D2F00B59B04 /* Build configuration list for PBXNativeTarget "MediquoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB87EB425503D2F00B59B04 /* Debug */,
+				3DB87EB525503D2F00B59B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DAB25932551D8FF0056D7A7 /* Mediquo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DAB25942551D8FF0056D7A7 /* Mediquo.xcdatamodel */,
+			);
+			currentVersion = 3DAB25942551D8FF0056D7A7 /* Mediquo.xcdatamodel */;
+			path = Mediquo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3DB87E7B25503D2E00B59B04 /* Project object */;
+}

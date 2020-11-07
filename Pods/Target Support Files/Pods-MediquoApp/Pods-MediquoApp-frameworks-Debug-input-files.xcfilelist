@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-MediquoApp/Pods-MediquoApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/FlagKit/FlagKit.framework
+${BUILT_PRODUCTS_DIR}/GECoreDataManager/GECoreDataManager.framework
+${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework
